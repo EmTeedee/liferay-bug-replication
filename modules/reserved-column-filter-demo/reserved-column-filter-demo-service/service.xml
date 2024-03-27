@@ -34,13 +34,16 @@
 		<!-- Order -->
 
 		<order by="asc">
-			<order-column name="field1" />
+			<order-column name="type" />
 		</order>
 
 		<!-- Finder methods -->
 
 		<finder name="Field2" return-type="Collection">
 			<finder-column name="field2" />
+		</finder>
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
 		</finder>
 
 		<!-- References -->
