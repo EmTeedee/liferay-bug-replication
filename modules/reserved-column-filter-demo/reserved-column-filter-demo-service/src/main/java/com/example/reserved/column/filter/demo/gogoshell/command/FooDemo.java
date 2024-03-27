@@ -48,7 +48,9 @@ public class FooDemo {
             sb.append(runTest(company));
 
         } catch (Exception exception) {
-            sb.append("Caught Exception: ").append(getRootCause(exception));
+            sb.append("Caught Exception: ")
+                .append(getRootCause(exception))
+                .append("\n");
         }
 
         return sb.toString();
@@ -62,7 +64,7 @@ public class FooDemo {
             _fooLocalService.getGroupFoo(company.getGroupId());
             sb.append("    -> OK\n");
         } catch (Exception exception) {
-            sb.append("    -> Error: ").append(getRootCause(exception));
+            sb.append("    -> Error: ").append(getRootCause(exception)).append("\n");;
             _log.error("Exception in findByGroupId", exception);
         }
 
@@ -71,7 +73,7 @@ public class FooDemo {
             _fooService.getGroupFoo(company.getGroupId());
             sb.append("    -> OK\n");
         } catch (Exception exception) {
-            sb.append("    -> Error: ").append(getRootCause(exception));
+            sb.append("    -> Error: ").append(getRootCause(exception)).append("\n");;
             _log.error("Exception in filterFindByGroupId", exception);
         }
 
