@@ -1,0 +1,11 @@
+dependencies {
+	api project(":modules:reserved-column-filter-demo:reserved-column-filter-demo-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../reserved-column-filter-demo-api/src/main/java"
+}
+
+group = "com.example.reserved.column.filter.demo"

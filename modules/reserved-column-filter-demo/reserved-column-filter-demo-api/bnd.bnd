@@ -1,0 +1,10 @@
+Bundle-Name: reserved-column-filter-demo-api
+Bundle-SymbolicName: com.example.reserved.column.filter.demo.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.example.reserved.column.filter.demo.exception,\
+	com.example.reserved.column.filter.demo.model,\
+	com.example.reserved.column.filter.demo.service,\
+	com.example.reserved.column.filter.demo.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../reserved-column-filter-demo-service/service.xml
